@@ -1,5 +1,7 @@
 # ApplyReforge
 
+**THIS HAS SINCE BEEN MERGED INTO REFORGES! DO /REFORGES APPLY**
+
 Apply Reforges is a plugin that hooks into [Reforges](https://github.com/Auxilor/Reforges) to allow you to put Reforges on items manually instead of having to go through a GUI reforge menu. 
 
 Command: `/applyreforge reforgeID (playerName)`
