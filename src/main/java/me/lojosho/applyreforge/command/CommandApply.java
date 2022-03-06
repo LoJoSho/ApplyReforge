@@ -31,11 +31,13 @@ public class CommandApply implements CommandExecutor {
         if (args.length == 1) {
             player = ((Player) sender).getPlayer();
             item = player.getInventory().getItemInMainHand();
-            if (Reforges.getByKey(args[0]) != null) {
+            if (Reforges.getByKey(args[0]) == null) {
+                sender.sendMessage(Component.text("Invalid Reforge"));
+                return true;
+            } else {
                 reforge = Reforges.getByKey(args[0]);
                 ReforgeUtils.setReforge(item, reforge);
-            } else {
-                sender.sendMessage(Component.text("Invalid Reforge"));
+                sender.sendMessage(Component.text("Successfully applied Reforge!"));
                 return true;
             }
         }
