@@ -1,0 +1,10 @@
+name: ApplyReforge
+version: '${version}'
+main: me.lojosho.applyreforge.ApplyReforge
+api-version: 1.18
+authors: [ LoJoSho ]
+depend:
+  - Reforges
+commands:
+  applyreforge:
+    description: Applies a reforge onto an item
